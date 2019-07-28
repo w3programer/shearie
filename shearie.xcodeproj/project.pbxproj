@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		5416FE0222ECF9FA008E0A51 /* shearie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5416FE0022ECF9FA008E0A51 /* shearie.xcdatamodeld */; };
 		5416FE0422ECF9FD008E0A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5416FE0322ECF9FD008E0A51 /* Assets.xcassets */; };
 		5416FE0722ECF9FD008E0A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5416FE0522ECF9FD008E0A51 /* LaunchScreen.storyboard */; };
+		6BD76BCD2FD739F0A0564C19 /* Pods_shearie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D0A62CDF627D5667C631E3 /* Pods_shearie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19D0A62CDF627D5667C631E3 /* Pods_shearie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shearie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5416FDF622ECF9FA008E0A51 /* shearie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shearie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5416FDF922ECF9FA008E0A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5416FDFB22ECF9FA008E0A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5416FE0322ECF9FD008E0A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5416FE0622ECF9FD008E0A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5416FE0822ECF9FD008E0A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B768FB051EA4F31935F1E4 /* Pods-shearie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shearie.debug.xcconfig"; path = "Target Support Files/Pods-shearie/Pods-shearie.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B7BEC00D262BA641D9CB3C /* Pods-shearie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shearie.release.xcconfig"; path = "Target Support Files/Pods-shearie/Pods-shearie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD76BCD2FD739F0A0564C19 /* Pods_shearie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5416FDF822ECF9FA008E0A51 /* shearie */,
 				5416FDF722ECF9FA008E0A51 /* Products */,
+				C828E5C32E80744889179FC4 /* Pods */,
+				F74D701B302CE5B611F2B670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,64 @@
 		5416FDF822ECF9FA008E0A51 /* shearie */ = {
 			isa = PBXGroup;
 			children = (
-				5416FDF922ECF9FA008E0A51 /* AppDelegate.swift */,
-				5416FDFB22ECF9FA008E0A51 /* ViewController.swift */,
-				5416FDFD22ECF9FA008E0A51 /* Main.storyboard */,
-				5416FE0322ECF9FD008E0A51 /* Assets.xcassets */,
-				5416FE0522ECF9FD008E0A51 /* LaunchScreen.storyboard */,
-				5416FE0822ECF9FD008E0A51 /* Info.plist */,
-				5416FE0022ECF9FA008E0A51 /* shearie.xcdatamodeld */,
+				5416FE1122ECFA7F008E0A51 /* assets */,
+				5416FE1022ECFA4F008E0A51 /* controller */,
+				5416FE0F22ECFA30008E0A51 /* view */,
+				5416FE0E22ECFA1D008E0A51 /* model */,
 			);
 			path = shearie;
+			sourceTree = "<group>";
+		};
+		5416FE0E22ECFA1D008E0A51 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5416FE0F22ECFA30008E0A51 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5416FE0522ECF9FD008E0A51 /* LaunchScreen.storyboard */,
+				5416FDFD22ECF9FA008E0A51 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5416FE1022ECFA4F008E0A51 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5416FDFB22ECF9FA008E0A51 /* ViewController.swift */,
+				5416FDF922ECF9FA008E0A51 /* AppDelegate.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5416FE1122ECFA7F008E0A51 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				5416FE0022ECF9FA008E0A51 /* shearie.xcdatamodeld */,
+				5416FE0822ECF9FD008E0A51 /* Info.plist */,
+				5416FE0322ECF9FD008E0A51 /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		C828E5C32E80744889179FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57B768FB051EA4F31935F1E4 /* Pods-shearie.debug.xcconfig */,
+				B5B7BEC00D262BA641D9CB3C /* Pods-shearie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F74D701B302CE5B611F2B670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D0A62CDF627D5667C631E3 /* Pods_shearie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5416FE0B22ECF9FD008E0A51 /* Build configuration list for PBXNativeTarget "shearie" */;
 			buildPhases = (
+				57CAAC3B4DFED4B8EC43D509 /* [CP] Check Pods Manifest.lock */,
 				5416FDF222ECF9FA008E0A51 /* Sources */,
 				5416FDF322ECF9FA008E0A51 /* Frameworks */,
 				5416FDF422ECF9FA008E0A51 /* Resources */,
+				F13EEDF54672D88AC283071C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57CAAC3B4DFED4B8EC43D509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shearie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13EEDF54672D88AC283071C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shearie/Pods-shearie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shearie/Pods-shearie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shearie/Pods-shearie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5416FDF222ECF9FA008E0A51 /* Sources */ = {
@@ -284,11 +384,12 @@
 		};
 		5416FE0C22ECF9FD008E0A51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B768FB051EA4F31935F1E4 /* Pods-shearie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZYXWKAWWZ4;
-				INFOPLIST_FILE = shearie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/shearie/assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +403,12 @@
 		};
 		5416FE0D22ECF9FD008E0A51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B7BEC00D262BA641D9CB3C /* Pods-shearie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZYXWKAWWZ4;
-				INFOPLIST_FILE = shearie/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/shearie/assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
